@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="outer">
+      <div class="inner">
+        <table>
+          <tr>
+            <!-- <td colspan="4" ><input type="text" class="inp365" id="inpId" /></td> -->
+            <td colspan="4">
+              <input
+                type="text"
+                id="inpId"
+                class="inp365"
+                placeholder="Enter something..."
+                readonly
+              />
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="button" value="C" onclick="clear()"></td> -->
+            <td><button onclick="getInputValue()" id="btnClear">C</button></td>
+            <td><button onclick="clear1()">⬅️</button></td>
+            <td><button class="addStrInp2">%</button></td>
+            <td><button class="addStrInp2">/</button></td>
+          </tr>
+          <tr>
+            <td><button class="addStrInp">7</button></td>
+            <td><button class="addStrInp">8</button></td>
+            <td><button class="addStrInp">9</button></td>
+            <td><button class="addStrInp2">*</button></td>
+          </tr>
+          <tr>
+            <td><button class="addStrInp">4</button></td>
+            <td><button class="addStrInp">5</button></td>
+            <td><button class="addStrInp">6</button></td>
+            <td><button class="addStrInp2">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="addStrInp" id="myButton">1</button></td>
+            <td><button class="addStrInp">2</button></td>
+            <td><button class="addStrInp">3</button></td>
+            <td><button class="addStrInp2">+</button></td>
+          </tr>
+          <tr>
+            <td><button class="addStrInp">00</button></td>
+            <td><button class="addStrInp">0</button></td>
+            <td><button class="addStrInp2">.</button></td>
+            <td><button onclick="evaluateFun3()">=</button></td>
+          </tr>
+        </table>
+      </div>
+      <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
